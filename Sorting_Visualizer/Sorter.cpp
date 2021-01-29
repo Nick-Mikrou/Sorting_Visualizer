@@ -278,7 +278,7 @@ void Sorter::InsertionSort(sf::RenderWindow& window, unsigned int& delay) noexce
 		float key = heights.at(i);
 		j = i - 1;
 
-		while (j >= 0 && heights.at(j) > key)
+		while (heights.at(j) > key)
 		{
 			HandleEvents(window);
 
